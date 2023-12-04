@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_home" />
+
+    <TextView
+        android:layout_width="219dp"
+        android:layout_height="43dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/business_search"
+        android:textAlignment="textStart"
+        android:textColor="#141515"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/keyword"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:completionThreshold="1"/>
+
+
+<!--    <EditText-->
+
+<!--        android:id="@+id/keyword"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:hint="@string/keyword"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="20dp"/>-->
+
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/distance"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="109dp"
+        android:layout_height="27dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/category"
+        android:textColor="@color/pink"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="158dp"
+        android:layout_height="31dp"
+        android:backgroundTint="@color/black"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:popupBackground="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/location"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/pink"
+        android:text="Auto-detect my location"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="Submit"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="Clear"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="219dp"
+        android:layout_height="43dp"
+        android:fontFamily="sans-serif"
+        android:text="Results"
+        android:textAlignment="textStart"
+        android:textColor="#141515"
+        android:textSize="28sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_viewid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbarSize="5dp"/>
+
+    <TextView
+        android:id="@+id/noResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Results Found!"
+        android:textColor="@color/red"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>

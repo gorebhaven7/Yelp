@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Yelp</string>
+    <string name="keyword"><p>KeyWord</p><font color="red">*</font></string>
+    <string name="distance">Distance</string>
+    <string name="category"><p>Category </p><font color="red">*</font></string>
+    <string name="location"><p>Location </p><font color="red">*</font></string>
+    <string name="business_search">Business Search</string>
+
+    <string-array name="category_items">
+        <item>Default</item>
+        <item>Arts and Entertainment</item>
+        <item>Health and Medical</item>
+        <item>Hotels and Travel</item>
+        <item>Food</item>
+        <item>Professional Services</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
